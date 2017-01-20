@@ -67,12 +67,12 @@ def main():
                 pass
 
             try:
-                if rx['result'][sum]['message']['chat']['id'] == CHANNEL_ID:
-                    ts = rx['result'][sum]['message']['date']
+                if rx['result'][sum]['channel_post']['chat']['id'] == CHANNEL_ID:
+                    ts = rx['result'][sum]['channel_post']['date']
                     ts_plus = ts + int(150)
 
                     try:
-                        pkm_info = rx['result'][sum]['message']['text']
+                        pkm_info = rx['result'][sum]['channel_post']['text']
                         pkm_info = pkm_info.encode("utf-8")
                     except:
                         pass
@@ -85,6 +85,7 @@ def main():
                         pkm_info = pkm_info.replace(',',' ').replace('/',' ').replace('  ','')
 
                         pkm_list = pkm_info.split(' ') 
+
 
     
                         # Find the Pokemon_name
