@@ -51,4 +51,6 @@ The free version script and the paid version (with reverse geocoding) will be up
 
 * After everything are setup, remeber to send a test notification from PokeAlert. In order to prevent duplicate messages, the first message recieved via getUpdates will be ignore, so if you don't sent the test notification, the first alert message sent by PokeAlert will be ignored. (Or you can manually send the message again by yourself in Channel B)
 
+* If you don't want to use two PokeAlarm terminal to handle the tth and push alert, you can type the same webhook address in WEBHOOK ADDRESS 1 and WEBHOOK ADDRESS 2
+
 * A demostrating [Telegram Group](https://t.me/joinchat/AAAAAEDneTL7N4ys9T2Gmw) (in Chinese, and for testing only)
