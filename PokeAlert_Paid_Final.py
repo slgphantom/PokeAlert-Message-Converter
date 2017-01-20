@@ -7,6 +7,7 @@ from time import strftime
 
 
 
+
 # Dictionary for converting Pokemon_English_Name into Pokemon_id
 pkm = {'Oddish': '43', 'Weezing': '110', 'Graveler': '75', 'Jynx': '124', 'Paras': '46', 'Kadabra': '64', 'Sandslash': '28', 'Kangaskhan': '115', 'Hitmonlee': '106', 'Poliwrath': '62', 'Machamp': '68', 'Butterfree': '12', 'Raichu': '26', 'Omanyte': '138', 'Tangela': '114', 'Slowpoke': '79', 'Chansey': '113', 'Diglett': '50', 'Rhydon': '112', 'Poliwhirl': '61', "Farfetch'd": '83', 'Parasect': '47', 'Tentacool': '72', 'Magnemite': '81', 'Ditto': '132', 'Aerodactyl': '142', 'Koffing': '109', 'Shellder': '90', 'Magmar': '126', 'Mankey': '56', 'Dratini': '147', 'Raticate': '20', 'Charmeleon': '5', 'Psyduck': '54', 'Slowbro': '80', 'Snorlax': '143', 'Arcanine': '59', 'Omastar': '139', 'Growlithe': '58', 'Articuno': '144', 'Blastoise': '9', 'Golem': '76', 'Pinsir': '127', 'Cloyster': '91', 'Beedrill': '15', 'Tauros': '128', 'Fearow': '22', 'Bulbasaur': '1', 'Kabutops': '141', 'Abra': '63', 'Arbok': '24', 'Doduo': '84', 'Muk': '89', 'Marowak': '105', 'Wartortle': '8', 'Wigglytuff': '40', 'Vulpix': '37', 'Magikarp': '129', 'Starmie': '121', 'Mew': '151', 'Geodude': '74', 'Pidgeotto': '17', 'Rattata': '19', 'Primeape': '57', 'Squirtle': '7', 'Exeggutor': '103', 'Bellsprout': '69', 'Nidoran_female': '29', 'Jolteon': '135', 'Venusaur': '3', 'Meowth': '52', 'Nidoran_male': '32', 'Spearow': '21', 'Scyther': '123', 'Ekans': '23', 'Alakazam': '65', 'Nidoqueen': '31', 'Mr. Mime': '122', 'Voltorb': '100', 'Dragonite': '149', 'Gyarados': '130', 'Vaporeon': '134', 'Metapod': '11', 'Jigglypuff': '39', 'Dragonair': '148', 'Hypno': '97', 'Lickitung': '108', 'Haunter': '93', 'Ivysaur': '2', 'Vileplume': '45', 'Gastly': '92', 'Drowzee': '96', 'Goldeen': '118', 'Pidgey': '16', 'Mewtwo': '150', 'Machoke': '67', 'Porygon': '137', 'Poliwag': '60', 'Eevee': '133', 'Sandshrew': '27', 'Venomoth': '49', 'Gloom': '44', 'Nidorino': '33', 'Nidorina': '30', 'Pidgeot': '18', 'Golduck': '55', 'Kingler': '99', 'Exeggcute': '102', 'Weepinbell': '70', 'Golbat': '42', 'Gengar': '94', 'Dodrio': '85', 'Rapidash': '78', 'Dugtrio': '51', 'Krabby': '98', 'Seadra': '117', 'Persian': '53', 'Nidoking': '34', 'Zapdos': '145', 'Zubat': '41', 'Charmander': '4', 'Electrode': '101', 'Moltres': '146', 'Victreebel': '71', 'Flareon': '136', 'Kabuto': '140', 'Electabuzz': '125', 'Weedle': '13', 'Charizard': '6', 'Pikachu': '25', 'Machop': '66', 'Caterpie': '10', 'Kakuna': '14', 'Horsea': '116', 'Seaking': '119', 'Dewgong': '87', 'Hitmonchan': '107', 'Clefable': '36', 'Ponyta': '77', 'Rhyhorn': '111', 'Tentacruel': '73', 'Ninetales': '38', 'Cubone': '104', 'Venonat': '48', 'Onix': '95', 'Clefairy': '35', 'Grimer': '88', 'Magneton': '82', 'Seel': '86', 'Lapras': '131', 'Staryu': '120'}
 
@@ -15,8 +16,6 @@ pkm_hk = {u'\u5c3c\u591a\u738b': '34', u'\u9b3c\u65af\u901a': '93', u'\u98db\u59
 
 # Dictionary for converting Moves_English_name into Moves_id
 mv = {'dragon pulse': '82', 'x scissor': '100', 'scratch': '220', 'gunk shot': '92', 'rest': '132', 'brine': '104', 'wrap pink': '137', 'flame charge': '101', 'poison fang': '50', 'cut': '223', 'flame burst': '102', 'bug buzz': '49', 'giga drain': '114', 'brick break': '123', 'fury cutter': '200', 'mud shot': '216', 'ice punch': '33', 'body slam': '131', 'thunder punch': '77', 'water gun (blastoise)': '232', 'fire punch': '115', 'air slash': '41', 'wing attack': '23', 'vine whip': '5', 'submission': '54', 'disarming voice': '84', 'heart stamp': '34', 'dig': '26', 'hydro pump': '107', 'dark pulse': '16', 'ice shard': '110', 'water gun': '9', 'bubble beam': '53', 'icy wind': '111', 'night slash': '51', 'solar beam': '116', 'air cutter': '121', 'hyper fang': '129', 'acid': '225', 'twineedle': '43', 'aerial ace': '45', 'scald': '106', 'bulldoze': '95', 'psychic': '108', 'hurricane': '122', 'sucker punch': '203', 'psyshock': '60', 'water pulse': '105', 'smog': '17', 'confusion': '235', 'mud slap': '233', 'shadow ball': '70', 'struggle': '133', 'stone edge': '32', 'spark': '76', 'play rough': '88', 'swift': '125', 'earthquake': '31', 'ice beam': '39', 'aqua tail': '58', 'rock smash': '241', 'mega drain': '48', 'petal blizzard': '47', 'headbutt': '128', 'razor leaf': '7', 'hydro pump (blastoise)': '135', 'hyper beam': '14', 'steel wing': '73', 'poison jab': '44', 'magnet bomb': '72', 'blizzard': '40', 'wrap green': '136', 'thunder shock': '78', 'mud bomb': '96', 'sludge bomb': '18', 'slash': '52', 'metal claw': '19', 'dragon claw': '83', 'lick': '15', 'karate chop': '208', 'wrap': '13', 'rock tomb': '63', 'iron head': '74', 'fire blast': '103', 'horn attack': '126', 'leaf blade': '117', 'bite': '202', 'heat wave': '42', 'flash cannon': '36', 'splash': '119', 'shadow punch': '67', 'seed bomb': '59', 'twister': '80', 'bubble': '237', 'flamethrower': '24', 'bullet punch': '71', 'parabolic charge': '75', 'cross poison': '89', 'low kick': '207', 'peck': '211', 'power whip': '118', 'psycho cut': '226', 'shadow sneak': '66', 'psystrike': '109', 'ember': '209', 'low sweep': '56', 'power gem': '65', 'poison sting': '236', 'pound': '11', 'shadow claw': '213', 'frost breath': '112', 'megahorn': '22', 'ancient power': '62', 'slam': '130', 'bug bite': '201', 'moonblast': '87', 'drill peck': '38', 'drill run': '46', 'double slap': '12', 'dragon breath': '204', 'rock slide': '64', 'quick attack': '2', 'aqua jet': '57', 'sludge wave': '91', 'draining kiss': '85', 'stomp': '127', 'feint attack': '238', 'signal beam': '99', 'thunderbolt': '79', 'rock throw': '227', 'cross chop': '28', 'scald (blastoise)': '134', 'vice grip': '20', 'absorb': '113', 'dazzling gleam': '86', 'zen headbutt': '234', 'flame wheel': '21', 'tackle': '221', 'discharge': '35', 'take down': '8', 'bone club': '94', 'psybeam': '30', 'ominous wind': '69', 'fire fang': '240'}
-
-
 
 # Main function
 def main():
@@ -35,7 +34,7 @@ def main():
             print log_time
 
             update_no = int(len(rx['result']))
-            update_status = int(update_no - 2)
+            update_status = int(update_no - 1)
             if update_status == 0:
                 print 'Update Number: null'
             else:
@@ -57,7 +56,7 @@ def main():
 
         # Handling updates (messages sent by PokeAlert bot)
         sum = 1
-        for i in range(1,n-1):
+        for i in range(0,n-1):
         
             # Use update_id as the encounter_id
             try:
@@ -205,24 +204,21 @@ def main():
         print '==========[Done]==========\n\n'
         time.sleep(0)
 
-
-
 # Say thank you before you start
 def run():   
     while True:
-        run = raw_input('Type "thank you" to continue:    ')
+        run = raw_input('Type "thank you" to continue:  ')
         if run != 'thank you':
             continue
         else:
             break
         
 
-
 # Start the script
 print '\n\nThis is a script written by @slgphantom / @lord_ss to convert PokeAlert external notification to telegram (paid mode) into a json string which fits the webhook standand for PokeAlarm, via the getUpdates method. Please read the README.md before you start!'
-TOKEN = raw_input('Enter your bot token:          ')
+TOKEN = str(raw_input('Enter your bot token:          '))
 CHANNEL_ID = int(raw_input('Enter your channel_id:         '))
-WH1 = raw_input('Enter your webhook address 1:  ')
-WH2 = raw_input('Enter your webhook address 2:  ')
+WH1 = str(raw_input('Enter your webhook address 1:  '))
+WH2 = str(raw_input('Enter your webhook address 2:  '))
 run()
 main()
