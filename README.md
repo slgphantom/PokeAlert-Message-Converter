@@ -24,7 +24,7 @@ The free version script and the paid version (with reverse geocoding) will be up
 
 ## Run the script
 1. Run `python PokeAlert_Paid_Final.py`
-2. Enter your BOT TOKEN (should be something like `123456:asdfgh`)
+2. Enter your BOT B TOKEN (should be something like `123456:asdfgh`)
 3. Enter your CHANNEL_ID (Channel B) (should be something like `-1001081234123123`)
 4. Enter WEBHOOK ADDRESS 1 (should be something like `http://127.0.0.1:4500`)
 5. Enter WEBHOOK ADDRESS 2 (should be something like `http://127.0.0.1:4501`)
