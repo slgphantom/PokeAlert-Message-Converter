@@ -7,7 +7,8 @@ Please feel free to imporve my code!
 
 ## Support
 We currently support the following services:
-* Paid Version (For example: Exeggcute 91% (14/12/15) confusion fast/psychic) till 21:38:00 (7m 24s) https://maps.google.com/maps?q=22.333501806422824,114.14156653862335 )
+* Paid Version 
+(For example: Exeggcute 91% (14/12/15) confusion fast/psychic) till 21:38:00 (7m 24s) https://maps.google.com/maps?q=22.333501806422824,114.14156653862335 )
 
 We currently support the following languages:
 * English
@@ -49,3 +50,5 @@ The free version script and the paid version (with reverse geocoding) will be up
 * Remember to create two new bots, and use them **ONLY** in these two channel.
 
 * After everything are setup, remeber to send a test notification from PokeAlert. In order to prevent duplicate messages, the first message recieved via getUpdates will be ignore, so if you don't sent the test notification, the first alert message sent by PokeAlert will be ignored. (Or you can manually send the message again by yourself in Channel B)
+
+* An demostrating [Telegram Group](https://t.me/joinchat/AAAAAEDneTL7N4ys9T2Gmw) (in Chinese, and for testing only)
