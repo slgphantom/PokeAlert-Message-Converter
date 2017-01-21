@@ -25,7 +25,7 @@ The free version script and the paid version (with reverse geocoding) will be up
 4. In Channel A, add Bot B as an administrator
 
 ## Run the script
-1. Run `python PokeAlert_Paid_Final.py`
+1. Run `python PokeAlert_<mode>.py`
 2. Enter your BOT B TOKEN (should be something like `123456:asdfgh`)
 3. Enter your CHANNEL_ID (Channel B) (should be something like `-1001081234123123`)
 4. Enter WEBHOOK ADDRESS 1 (should be something like `http://127.0.0.1:4500`)
