@@ -79,7 +79,7 @@ def main():
 
                     try:
 
-                        pkm_info = pkm_info.replace('Nidoran♀','Nidoran_female').replace('Nidoran♂','Nidoran_male').replace('sludge','sludge bomb')
+                        pkm_info = pkm_info.replace('Nidoran♀','Nidoran_female').replace('Nidoran♂','Nidoran_male')
                         pkm_info = pkm_info.replace('fast/','XXX ').replace(') till',' YYY')                    
                         pkm_info = pkm_info.replace('(','').replace(')','').replace('https://maps.google.com/maps?q=','')
                         pkm_info = pkm_info.replace(',',' ').replace('/',' ').replace('  ','')
