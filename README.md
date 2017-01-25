@@ -7,16 +7,14 @@ Please feel free to imporve my code!
 
 ## Support
 We currently support the following services:
-* **Paid Version**      
+* **Paid Version (can with Reverse Geocoding)**      
 [For example: Exeggcute 91% (14/12/15) confusion fast/psychic) till 21:38:00 (7m 24s) https://maps.google.com/maps?q=22.333501806422824,114.14156653862335 ]
-* **Paid Version with (Chinese) Reverse Geocoding**     
-[For example: (小西灣) 皮可斯 40% (7/6/5) pound fast/psychic) till 01:19:24 (21m 59s) https://maps.google.com/maps?q=22.261408634916958,114.24764062187626 ]
 
 We currently support the following languages:
 * English
 * Chinese
 
-The free version script and the paid version (with reverse geocoding) will be uploaded once I have finish cleaning the code.
+The free version script will be uploaded once I have finish cleaning the code.
 
 ## Setup the Telegram
 1. Set up two telegram channels (Channel A for public use, Channel B for updating the message)
