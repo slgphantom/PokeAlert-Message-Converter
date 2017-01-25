@@ -86,7 +86,7 @@ def main():
                         pkm_info = pkm_info.replace(',',' ').replace('/',' ').replace('  ','')
 
                         pkm_list = pkm_info.split(' ') 
-
+                        pkm_list = [x for x in pkm_list if not x.startswith('#')]
 
     
                         # Find the Pokemon_name
