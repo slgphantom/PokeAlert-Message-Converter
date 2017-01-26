@@ -58,7 +58,7 @@ def main():
 
         # Handling updates (messages sent by PokeAlert bot)
         sum = 1
-        for i in range(0,n-1):
+        for i in range(0,n):
         
             # Use update_id as the encounter_id
             try:
