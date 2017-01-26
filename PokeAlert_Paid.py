@@ -210,7 +210,7 @@ def main():
             except: 
                 pass
 
-            time.sleep(0)
+            time.sleep(1)
  
         print '==========[Done]==========\n\n'
         time.sleep(0)
